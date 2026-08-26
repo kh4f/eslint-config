@@ -12,6 +12,15 @@
 	"scripts": {
 		"build": "tsdown"
 	},
+	"dependencies": {
+		"@eslint/js": "^10.0.1",
+		"@stylistic/eslint-plugin": "^5.10.0",
+		"jiti": "^2.7.0",
+		"typescript-eslint": "^8.68.0"
+	},
+	"peerDependencies": {
+		"eslint": "^10.9.1"
+	},
 	"devDependencies": {
 		"@types/bun": "^1.4.0",
 		"tsdown": "^0.22.14",
