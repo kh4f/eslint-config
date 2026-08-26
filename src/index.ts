@@ -6,14 +6,13 @@ import stylistic from '@stylistic/eslint-plugin'
 export default defineConfig([
 	globalIgnores(['**/dist']),
 	{
-		name: 'Base Rules',
+		name: 'TypeScript Rules',
 		files: ['**/*.ts'],
-		extends: [js.configs.recommended],
-	},
-	{
-		name: 'Type-Aware Rules',
-		files: ['**/*.ts'],
-		extends: [ts.configs.strictTypeChecked, ts.configs.stylisticTypeChecked],
+		extends: [
+			js.configs.recommended,
+			ts.configs.strictTypeChecked,
+			ts.configs.stylisticTypeChecked,
+		],
 		languageOptions: { parserOptions: { projectService: true } },
 		rules: {
 			'@typescript-eslint/restrict-template-expressions': 'off',
