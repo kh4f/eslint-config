@@ -1,0 +1,11 @@
+{
+	"name": "@kh4f/eslint-config",
+	"version": "0.0.0",
+	"description": "ESLint Config",
+	"author": "kh4f",
+	"license": "MIT",
+	"repository": "https://github.com/kh4f/eslint-config",
+	"homepage": "https://github.com/kh4f/eslint-config",
+	"bugs": "https://github.com/kh4f/eslint-config/issues",
+	"keywords": ["eslint-config"]
+}
