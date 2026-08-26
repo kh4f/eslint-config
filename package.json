@@ -10,7 +10,8 @@
 	"keywords": ["eslint-config"],
 	"type": "module",
 	"scripts": {
-		"build": "tsdown"
+		"build": "tsdown",
+		"lint": "tsc && eslint"
 	},
 	"dependencies": {
 		"@eslint/js": "^10.0.1",
