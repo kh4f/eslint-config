@@ -7,7 +7,6 @@ export default defineConfig([
 	globalIgnores(['**/dist']),
 	{
 		name: 'TypeScript Rules',
-		files: ['**/*.ts'],
 		extends: [
 			js.configs.recommended,
 			ts.configs.strictTypeChecked,
@@ -21,7 +20,6 @@ export default defineConfig([
 	},
 	{
 		name: 'Stylistic Rules',
-		files: ['**/*.ts'],
 		extends: [stylistic.configs.recommended],
 		rules: {
 			'@stylistic/no-tabs': 'off',
