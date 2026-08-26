@@ -8,8 +8,13 @@
 	"homepage": "https://github.com/kh4f/eslint-config",
 	"bugs": "https://github.com/kh4f/eslint-config/issues",
 	"keywords": ["eslint-config"],
+	"type": "module",
+	"scripts": {
+		"build": "tsdown"
+	},
 	"devDependencies": {
 		"@types/bun": "^1.4.0",
+		"tsdown": "^0.22.14",
 		"typescript": "^6.0.3"
 	}
 }
