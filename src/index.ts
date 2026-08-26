@@ -6,7 +6,7 @@ import stylistic from '@stylistic/eslint-plugin'
 export default defineConfig([
 	globalIgnores(['**/dist']),
 	{
-		name: 'TypeScript Rules',
+		name: 'TypeScript',
 		extends: [
 			js.configs.recommended,
 			ts.configs.strictTypeChecked,
@@ -19,7 +19,7 @@ export default defineConfig([
 		},
 	},
 	{
-		name: 'Stylistic Rules',
+		name: 'Stylistic',
 		extends: [stylistic.configs.recommended],
 		rules: {
 			'@stylistic/no-tabs': 'off',
