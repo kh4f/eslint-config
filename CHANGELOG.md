@@ -1,5 +1,11 @@
 # Changelog
 
+## &ensp; ` 🏷️ v0.3.0  `
+
+### &emsp; 🎁 Features
+- **Non-null assertions allowed**: the `@typescript-eslint/no-non-null-assertion` rule is now off, so non-null assertions no longer fail linting out of the box. [🡥](https://github.com/kh4f/eslint-config/commit/ed9cb07)
+
+##### &emsp;&emsp; [Commit log](https://github.com/kh4f/eslint-config/compare/v0.2.0...v0.3.0) &ensp;•&ensp; Aug 28, 2026
 
 ## &ensp; ` 🏷️ v0.2.0  `
 
@@ -20,7 +26,6 @@
 - **Cleaner config block names**: removed the redundant "Rules" suffix from config names shown in the config inspector. [🡥](https://github.com/kh4f/eslint-config/commit/cb4d535)
 
 ##### &emsp;&emsp; [Commit log](https://github.com/kh4f/eslint-config/compare/v0.1.0...v0.2.0) &ensp;•&ensp; Aug 27, 2026
-
 
 ## &ensp; ` 🏷️ v0.1.0  `
 
