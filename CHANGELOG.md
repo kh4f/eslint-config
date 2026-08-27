@@ -1,5 +1,27 @@
 # Changelog
 
+
+## &ensp; ` 🏷️ v0.2.0  `
+
+### &emsp; 📢 BREAKING CHANGES
+- The default export is now a **factory function**, not a ready-made config array. Update your `eslint.config.ts` to call it, e.g. `export default kh4f()`. [🡥](https://github.com/kh4f/eslint-config/commit/1e81998)
+
+### &emsp; 🎁 Features
+- **Optional React and Next.js blocks**: enable framework-specific rules via `{ react: true }` / `{ next: true }` options; enabling `next` implies `react`. The plugin packages are optional peer dependencies. [🡥](https://github.com/kh4f/eslint-config/commit/1e81998)
+- **All JS and TS file types linted by default**: the config now applies to `.js`, `.mjs`, `.cjs`, `.jsx`, `.ts`, `.mts`, `.cts` and `.tsx` files out of the box. [🡥](https://github.com/kh4f/eslint-config/commit/14b21a6)
+
+### &emsp; 🩹 Fixes
+- **Package entrypoint declared**: added missing `main` and `types` fields so consumers can resolve the module and its type declarations. [🡥](https://github.com/kh4f/eslint-config/commit/15bd466)
+
+### &emsp; 📋 Docs
+- **README with install and usage documentation**: describes included rule sets, installation steps, and examples for enabling React/Next.js blocks. [🡥](https://github.com/kh4f/eslint-config/commit/69be7e8)
+
+### &emsp; 🎨 Style
+- **Cleaner config block names**: removed the redundant "Rules" suffix from config names shown in the config inspector. [🡥](https://github.com/kh4f/eslint-config/commit/cb4d535)
+
+##### &emsp;&emsp; [Commit log](https://github.com/kh4f/eslint-config/compare/v0.1.0...v0.2.0) &ensp;•&ensp; Aug 27, 2026
+
+
 ## &ensp; ` 🏷️ v0.1.0  `
 
 ### &emsp; 🎁 Features
