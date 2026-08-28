@@ -28,15 +28,15 @@ import kh4f from '@kh4f/eslint-config'
 export default defineConfig([
 	await kh4f(), // a standard flat config array
 ])
+// or just
+export default await kh4f()
 ```
 
 Enable framework-specific rules via options:
 
 ```ts
-export default defineConfig([
-	await kh4f({
-		react: true, // React rules
-		next: true, // Next.js rules (implies `react`)
-	}),
-])
+await kh4f({
+	react: true, // React rules
+	next: true, // Next.js rules (implies `react`)
+})
 ```
