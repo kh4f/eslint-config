@@ -11,6 +11,40 @@ interface Options {
 	next?: boolean
 }
 
+export default async function (opts: Options = {}) {
+	return defineConfig([
+		globalIgnores(['**/dist', '.next', 'next-env.d.ts']),
+		{
+			name: 'TypeScript',
+			extends: [
+				js.configs.recommended,
+				ts.configs.strictTypeChecked,
+				ts.configs.stylisticTypeChecked,
+			],
+			languageOptions: { parserOptions: { projectService: true } },
+			rules: {
+				'@typescript-eslint/restrict-template-expressions': 'off',
+				'@typescript-eslint/no-confusing-void-expression': 'off',
+				'@typescript-eslint/no-non-null-assertion': 'off',
+			},
+		},
+		{
+			name: 'Stylistic',
+			extends: [stylistic.configs.recommended],
+			rules: {
+				'@stylistic/no-tabs': 'off',
+				'@stylistic/indent': ['error', 'tab'],
+				'@stylistic/indent-binary-ops': ['error', 'tab'],
+				'@stylistic/brace-style': ['error', '1tbs'],
+				'@stylistic/arrow-parens': ['error', 'as-needed'],
+				'@stylistic/eol-last': ['error', 'never'],
+			},
+		},
+		...(opts.react || opts.next ? await getReactCfg() : []),
+		...(opts.next ? await getNextCfg() : []),
+	])
+}
+
 async function getReactCfg(): Promise<ConfigWithExtends[]> {
 	const [{ default: react }, { default: hooks }] = await Promise.all([
 		import('@eslint-react/eslint-plugin'),
@@ -45,38 +79,4 @@ async function getNextCfg(): Promise<ConfigWithExtends[]> {
 		name: 'Next',
 		extends: [next.configs.recommended, next.configs['core-web-vitals']],
 	}]
-}
-
-export default async function (opts: Options = {}) {
-	return defineConfig([
-		globalIgnores(['**/dist', '.next', 'next-env.d.ts']),
-		{
-			name: 'TypeScript',
-			extends: [
-				js.configs.recommended,
-				ts.configs.strictTypeChecked,
-				ts.configs.stylisticTypeChecked,
-			],
-			languageOptions: { parserOptions: { projectService: true } },
-			rules: {
-				'@typescript-eslint/restrict-template-expressions': 'off',
-				'@typescript-eslint/no-confusing-void-expression': 'off',
-				'@typescript-eslint/no-non-null-assertion': 'off',
-			},
-		},
-		{
-			name: 'Stylistic',
-			extends: [stylistic.configs.recommended],
-			rules: {
-				'@stylistic/no-tabs': 'off',
-				'@stylistic/indent': ['error', 'tab'],
-				'@stylistic/indent-binary-ops': ['error', 'tab'],
-				'@stylistic/brace-style': ['error', '1tbs'],
-				'@stylistic/arrow-parens': ['error', 'as-needed'],
-				'@stylistic/eol-last': ['error', 'never'],
-			},
-		},
-		...(opts.react || opts.next ? await getReactCfg() : []),
-		...(opts.next ? await getNextCfg() : []),
-	])
 }
