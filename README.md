@@ -8,7 +8,7 @@ A shareable ESLint config that provides:
 ## 📥 Install
 
 ```bash
-bun a -d eslint @kh4f/eslint-config
+bun a -d @kh4f/eslint-config
 ```
 
 React and Next.js ESLint plugins are only required if you enable the corresponding options:
