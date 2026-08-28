@@ -13,7 +13,7 @@ interface Options {
 
 export default async function (opts: Options = {}) {
 	return defineConfig([
-		globalIgnores(['**/dist', '.next', 'next-env.d.ts']),
+		globalIgnores(['**/dist', '**/.next', '**/next-env.d.ts']),
 		{
 			name: 'TypeScript',
 			extends: [
