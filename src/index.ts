@@ -7,7 +7,7 @@ import stylistic from '@stylistic/eslint-plugin'
 interface Options {
 	/** Enable React rules */
 	react?: boolean
-	/** Enable Next.js rules (implies `react: true`) */
+	/** Enable Next.js rules (implies `react`) */
 	next?: boolean
 }
 
