@@ -21,7 +21,7 @@ export default async function (opts: Options = {}) {
 				ts.configs.strictTypeChecked,
 				ts.configs.stylisticTypeChecked,
 			],
-			languageOptions: { parserOptions: { projectService: true } },
+			languageOptions: { parserOptions: { projectService: true, tsconfigRootDir: import.meta.dirname } },
 			rules: {
 				'@typescript-eslint/restrict-template-expressions': 'off',
 				'@typescript-eslint/no-confusing-void-expression': 'off',
