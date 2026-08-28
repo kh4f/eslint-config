@@ -47,7 +47,7 @@ async function getNextCfg(): Promise<ConfigWithExtends[]> {
 	}]
 }
 
-export default async function kh4f(opts: Options = {}) {
+export default async function (opts: Options = {}) {
 	return defineConfig([
 		globalIgnores(['**/dist']),
 		{
