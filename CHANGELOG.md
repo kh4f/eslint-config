@@ -1,5 +1,12 @@
 # Changelog
 
+## &ensp; ` 🏷️ v0.4.2  `
+
+### &emsp; 📋 Docs
+- **Simplified usage examples**: the README now shows that the factory result can be exported directly without a `defineConfig` wrapper. [🡥](https://github.com/kh4f/eslint-config/commit/94c402a)
+
+##### &emsp;&emsp; [Commit log](https://github.com/kh4f/eslint-config/compare/v0.4.1...v0.4.2) &ensp;•&ensp; Aug 29, 2026
+
 ## &ensp; ` 🏷️ v0.4.1  `
 
 ### &emsp; 🩹 Fixes
