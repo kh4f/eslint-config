@@ -1,5 +1,18 @@
 # Changelog
 
+## &ensp; ` 🏷️ v0.4.0  `
+
+### &emsp; 📢 BREAKING CHANGES
+- The config factory is now **async** because optional plugins are imported lazily. Update your `eslint.config.ts` to await it: `export default await kh4f()`. [🡥](https://github.com/kh4f/eslint-config/commit/84d438c)
+
+### &emsp; 🎁 Features
+- **Next.js build artifacts ignored by default**: `.next` and `next-env.d.ts` are now globally ignored alongside `dist`. [🡥](https://github.com/kh4f/eslint-config/commit/29694d8)
+
+### &emsp; 🩹 Fixes
+- **Optional plugins no longer crash on import**: `@eslint-react/eslint-plugin`, `eslint-plugin-react-hooks` and `@next/eslint-plugin-next` are imported dynamically only when the corresponding option is enabled, so projects without them lint fine. [🡥](https://github.com/kh4f/eslint-config/commit/84d438c)
+
+##### &emsp;&emsp; [Commit log](https://github.com/kh4f/eslint-config/compare/v0.3.0...v0.4.0) &ensp;•&ensp; Aug 28, 2026
+
 ## &ensp; ` 🏷️ v0.3.0  `
 
 ### &emsp; 🎁 Features
