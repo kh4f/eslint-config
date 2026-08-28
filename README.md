@@ -26,7 +26,7 @@ import { defineConfig } from 'eslint/config'
 import kh4f from '@kh4f/eslint-config'
 
 export default defineConfig([
-	kh4f(), // a standard flat config array
+	await kh4f(), // a standard flat config array
 ])
 ```
 
@@ -34,7 +34,7 @@ Enable framework-specific rules via options:
 
 ```ts
 export default defineConfig([
-	kh4f({
+	await kh4f({
 		react: true, // React rules
 		next: true, // Next.js rules (implies `react`)
 	}),

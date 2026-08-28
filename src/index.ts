@@ -3,9 +3,6 @@ import type { ConfigWithExtends } from '@eslint/config-helpers'
 import js from '@eslint/js'
 import ts from 'typescript-eslint'
 import stylistic from '@stylistic/eslint-plugin'
-import react from '@eslint-react/eslint-plugin'
-import hooks from 'eslint-plugin-react-hooks'
-import next from '@next/eslint-plugin-next'
 
 interface Options {
 	/** Enable React rules */
@@ -14,8 +11,13 @@ interface Options {
 	next?: boolean
 }
 
-export default function kh4f(opts: Options = {}) {
-	const reactCfg: ConfigWithExtends[] = [
+async function getReactCfg(): Promise<ConfigWithExtends[]> {
+	const [{ default: react }, { default: hooks }] = await Promise.all([
+		import('@eslint-react/eslint-plugin'),
+		import('eslint-plugin-react-hooks'),
+	])
+
+	return [
 		{
 			name: 'React',
 			extends: [react.configs['recommended-type-checked'], hooks.configs.flat.recommended],
@@ -34,12 +36,18 @@ export default function kh4f(opts: Options = {}) {
 			},
 		},
 	]
+}
 
-	const nextCfg: ConfigWithExtends[] = [{
+async function getNextCfg(): Promise<ConfigWithExtends[]> {
+	const { default: next } = await import('@next/eslint-plugin-next')
+
+	return [{
 		name: 'Next',
 		extends: [next.configs.recommended, next.configs['core-web-vitals']],
 	}]
+}
 
+export default async function kh4f(opts: Options = {}) {
 	return defineConfig([
 		globalIgnores(['**/dist']),
 		{
@@ -68,7 +76,7 @@ export default function kh4f(opts: Options = {}) {
 				'@stylistic/eol-last': ['error', 'never'],
 			},
 		},
-		...(opts.react || opts.next ? reactCfg : []),
-		...(opts.next ? nextCfg : []),
+		...(opts.react || opts.next ? await getReactCfg() : []),
+		...(opts.next ? await getNextCfg() : []),
 	])
 }
