@@ -1,5 +1,12 @@
 # Changelog
 
+## &ensp; ` 🏷️ v0.4.1  `
+
+### &emsp; 🩹 Fixes
+- **Fixed type-aware linting in multi-root workspaces**: the project service now receives an explicit `tsconfigRootDir`, resolving "was not found by the project service" and "multiple candidate TSConfigRootDirs" errors in editors when the config is used across several workspace roots. [🡥](https://github.com/kh4f/eslint-config/commit/b597406)
+
+##### &emsp;&emsp; [Commit log](https://github.com/kh4f/eslint-config/compare/v0.4.0...v0.4.1) &ensp;•&ensp; Aug 29, 2026
+
 ## &ensp; ` 🏷️ v0.4.0  `
 
 ### &emsp; 📢 BREAKING CHANGES
