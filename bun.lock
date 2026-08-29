@@ -11,7 +11,7 @@
         "typescript-eslint": "^8.68.0",
       },
       "devDependencies": {
-        "@eslint-react/eslint-plugin": "^5.18.6 ",
+        "@eslint-react/eslint-plugin": "^5.18.6",
         "@eslint/config-inspector": "^3.3.0",
         "@next/eslint-plugin-next": "^16.3.3",
         "@types/bun": "^1.4.0",
@@ -20,10 +20,10 @@
         "typescript": "^6.0.3",
       },
       "peerDependencies": {
-        "@eslint-react/eslint-plugin": "^5.18.6",
-        "@next/eslint-plugin-next": "^16.3.3",
-        "eslint": "^10.9.1",
-        "eslint-plugin-react-hooks": "^7.1.1",
+        "@eslint-react/eslint-plugin": "^5",
+        "@next/eslint-plugin-next": "^16",
+        "eslint": "^10",
+        "eslint-plugin-react-hooks": "^7",
       },
       "optionalPeers": [
         "@eslint-react/eslint-plugin",
