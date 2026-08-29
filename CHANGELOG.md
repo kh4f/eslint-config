@@ -1,5 +1,12 @@
 # Changelog
 
+## &ensp; ` 🏷️ v0.4.3  `
+
+### &emsp; 🩹 Fixes
+- **Optional peer plugins are now actually declared**: `@eslint-react/eslint-plugin`, `@next/eslint-plugin-next` and `eslint-plugin-react-hooks` were only listed in `peerDependenciesMeta`, which npm ignores. They are now declared in `peerDependencies` with major-only ranges, so npm can verify version compatibility with the plugins consumers install. [🡥](https://github.com/kh4f/eslint-config/commit/34c4655)
+
+##### &emsp;&emsp; [Commit log](https://github.com/kh4f/eslint-config/compare/v0.4.2...v0.4.3) &ensp;•&ensp; Aug 29, 2026
+
 ## &ensp; ` 🏷️ v0.4.2  `
 
 ### &emsp; 📋 Docs
