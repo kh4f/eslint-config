@@ -24,7 +24,7 @@ jobs:
       - run: bun lint
       - run: bun run build
 
-      - run: npm publish
+      - run: npm stage publish
       - run: gh release create $TAG --title $TAG --draft
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
