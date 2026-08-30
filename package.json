@@ -10,8 +10,8 @@
 	"keywords": ["eslint", "eslint-config", "typescript", "react", "nextjs"],
 	"files": ["dist"],
 	"type": "module",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
+	"main": "dist/index.mjs",
+	"types": "dist/index.d.mts",
 	"scripts": {
 		"inspect": "config-inspector",
 		"build": "tsdown",
