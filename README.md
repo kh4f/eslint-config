@@ -5,20 +5,11 @@ A shareable ESLint config that provides:
 - stylistic rules (tabs, single quotes, `1tbs`, etc.)
 - optional React and Next.js rules
 
-## 📥 Install
+## ⚙️ Setup
 
 ```bash
 bun a -d @kh4f/eslint-config
 ```
-
-React and Next.js ESLint plugins are only required if you enable the corresponding options:
-
-```bash
-bun a -d @eslint-react/eslint-plugin eslint-plugin-react-hooks
-bun a -d @next/eslint-plugin-next
-```
-
-## 🕹️ Usage
 
 ```ts
 // eslint.config.ts
@@ -32,7 +23,13 @@ export default defineConfig([
 export default await kh4f()
 ```
 
-Enable framework-specific rules via options:
+For framework-specific rules, install the corresponding ESLint plugins and enable them via options:
+
+
+```bash
+bun a -d @eslint-react/eslint-plugin eslint-plugin-react-hooks
+bun a -d @next/eslint-plugin-next
+```
 
 ```ts
 await kh4f({
