@@ -1,5 +1,19 @@
 # Changelog
 
+## &ensp; ` 🏷️ v0.5.0  `
+
+### &emsp; ✨ Features
+- **`@stylistic/operator-linebreak` disabled**: the rule is turned off because its default operator placement is inconvenient and frequently gets in the way. [🡥](https://github.com/kh4f/eslint-config/commit/262ff7a)
+
+### &emsp; 📦 Distribution
+- **Native ESM output**: the build now emits `.mjs`/`.mts` files, letting Node.js resolve the module format without reading `package.json` at load time. [🡥](https://github.com/kh4f/eslint-config/commit/150fd8e)
+
+### &emsp; 📋 Docs
+- **Consolidated setup section**: merged `Install` and `Usage` into a single `Setup` section and reordered the framework plugin install commands before the config example. [🡥](https://github.com/kh4f/eslint-config/commit/cffa10a)
+- **Added badge row**: npm version, downloads, and license badges now sit under the README heading. [🡥](https://github.com/kh4f/eslint-config/commit/5b44070)
+
+##### &emsp;&emsp; [Commit log](https://github.com/kh4f/eslint-config/compare/v0.4.3...v0.5.0) &ensp;•&ensp; Sep 10, 2026
+
 ## &ensp; ` 🏷️ v0.4.3  `
 
 ### &emsp; 🩹 Fixes

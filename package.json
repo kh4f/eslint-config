@@ -1,7 +1,7 @@
 {
 	"name": "@kh4f/eslint-config",
-	"version": "0.4.3",
-	"description": "🧹 Shareable ESLint Config",
+	"version": "0.5.0",
+	"description": "🧹 kh4f's ESLint Config",
 	"author": "kh4f",
 	"license": "MIT",
 	"repository": "https://github.com/kh4f/eslint-config",
