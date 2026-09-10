@@ -38,6 +38,7 @@ export default async function (opts: Options = {}) {
 				'@stylistic/brace-style': ['error', '1tbs'],
 				'@stylistic/arrow-parens': ['error', 'as-needed'],
 				'@stylistic/eol-last': ['error', 'never'],
+				'@stylistic/operator-linebreak': 'off',
 			},
 		},
 		...(opts.react || opts.next ? await getReactCfg() : []),
