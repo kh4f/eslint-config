@@ -1,4 +1,4 @@
-# 🧹 ESLint Config
+# 🧹 kh4f's ESLint Config
 
 <a href="https://www.npmjs.com/package/@kh4f/eslint-config"><img src="https://img.shields.io/npm/v/@kh4f/eslint-config?style=flat-square&labelColor=0A0A0A&color=1B1A23&label=npm&logo=npm" alt="npm"/></a>&nbsp;
 <a href="https://www.npmjs.com/package/@kh4f/eslint-config"><img src="https://img.shields.io/npm/dy/@kh4f/eslint-config?style=flat-square&labelColor=0A0A0A&color=1B1A23&label=%F0%9F%93%A5%20downloads" alt="downloads"/></a>&nbsp;
