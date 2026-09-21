@@ -1,8 +1,8 @@
 # 🧹 kh4f's ESLint Config
 
-<a href="https://www.npmjs.com/package/@kh4f/eslint-config"><img src="https://img.shields.io/npm/v/@kh4f/eslint-config?style=flat-square&labelColor=6600F5&color=E2CFFC&label=npm&logo=npm"/></a>&nbsp;
-<a href="https://www.npmjs.com/package/@kh4f/eslint-config"><img src="https://img.shields.io/npm/dy/@kh4f/eslint-config?style=flat-square&labelColor=6600F5&color=E2CFFC&label=%F0%9F%93%A5%20downloads"/></a>&nbsp;
-<a href="https://eslint.org/"><img src="https://img.shields.io/badge/ESLint-%5E10.0.0-000000?logo=eslint&style=flat-square&labelColor=6600F5&color=E2CFFC"/></a>
+<a href="https://www.npmjs.com/package/@kh4f/eslint-config"><img src="https://img.shields.io/npm/v/@kh4f/eslint-config?style=flat-square&labelColor=6600F5&color=E2CFFC&label=npm&logo=npm" alt="version"/></a>&nbsp;
+<a href="https://www.npmjs.com/package/@kh4f/eslint-config"><img src="https://img.shields.io/npm/dy/@kh4f/eslint-config?style=flat-square&labelColor=6600F5&color=E2CFFC&label=%F0%9F%93%A5%20downloads" alt="downloads"/></a>&nbsp;
+<a href="https://eslint.org/"><img src="https://img.shields.io/badge/ESLint-%5E10.0.0-000000?logo=eslint&style=flat-square&labelColor=6600F5&color=E2CFFC" alt="ESLint version"/></a>
 
 A shareable ESLint config that provides:
 - strict, type-aware TypeScript rules
