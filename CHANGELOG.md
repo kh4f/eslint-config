@@ -1,5 +1,15 @@
 # Changelog
 
+## &ensp; ` 🏷️ v0.6.0  `
+
+### &emsp; ✨ Features
+- **Import sorting**: imports are now ordered consistently by `perfectionist/sort-imports`. [🡥](https://github.com/kh4f/eslint-config/commit/3176ed414498de6c2ae0e848cd3b1ec0372b91e1)
+
+### &emsp; 📋 Docs
+- **Minimum ESLint version badge**: the README now shows the minimum supported ESLint version, `^10.0.0`. [🡥](https://github.com/kh4f/eslint-config/commit/1b82eb3132abd73a69eab0e835c3be0aa3e8b736)
+
+##### &emsp;&emsp; [Commit log](https://github.com/kh4f/eslint-config/compare/v0.5.0...v0.6.0) &ensp;•&ensp; Sep 21, 2026
+
 ## &ensp; ` 🏷️ v0.5.0  `
 
 ### &emsp; ✨ Features
