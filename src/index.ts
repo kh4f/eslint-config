@@ -1,8 +1,9 @@
+import perfectionist from 'eslint-plugin-perfectionist'
 import { defineConfig, globalIgnores } from 'eslint/config'
-import type { ConfigWithExtends } from '@eslint/config-helpers'
 import js from '@eslint/js'
-import ts from 'typescript-eslint'
 import stylistic from '@stylistic/eslint-plugin'
+import ts from 'typescript-eslint'
+import type { ConfigWithExtends } from '@eslint/config-helpers'
 
 interface Options {
 	/** Enable React rules */
@@ -31,6 +32,7 @@ export default async function (opts: Options = {}) {
 		{
 			name: 'Stylistic',
 			extends: [stylistic.configs.recommended],
+			plugins: { perfectionist },
 			rules: {
 				'@stylistic/no-tabs': 'off',
 				'@stylistic/indent': ['error', 'tab'],
@@ -39,6 +41,28 @@ export default async function (opts: Options = {}) {
 				'@stylistic/arrow-parens': ['error', 'as-needed'],
 				'@stylistic/eol-last': ['error', 'never'],
 				'@stylistic/operator-linebreak': 'off',
+				'perfectionist/sort-imports': ['error', {
+					type: 'alphabetical',
+					order: 'asc',
+					newlinesBetween: 0,
+					specialCharacters: 'trim',
+					groups: [
+						'builtin',
+						'type-builtin',
+						{ newlinesBetween: 1 },
+						'external',
+						'type-external',
+						{ newlinesBetween: 1 },
+						'internal',
+						'parent',
+						'sibling',
+						'type-internal',
+						'type-parent',
+						'type-sibling',
+						{ newlinesBetween: 1 },
+						'unknown',
+					],
+				}],
 			},
 		},
 		...(opts.react || opts.next ? await getReactCfg() : []),
