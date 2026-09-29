@@ -38,6 +38,7 @@ export default async function (opts: Options = {}) {
 				'@stylistic/no-tabs': 'off',
 				'@stylistic/indent': ['error', 'tab'],
 				'@stylistic/indent-binary-ops': ['error', 'tab'],
+				'@stylistic/max-len': ['error', { code: 120 }],
 				'@stylistic/brace-style': ['error', '1tbs'],
 				'@stylistic/arrow-parens': ['error', 'as-needed'],
 				'@stylistic/eol-last': ['error', 'never'],
