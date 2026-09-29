@@ -27,6 +27,7 @@ export default async function (opts: Options = {}) {
 				'@typescript-eslint/restrict-template-expressions': 'off',
 				'@typescript-eslint/no-confusing-void-expression': 'off',
 				'@typescript-eslint/no-non-null-assertion': 'off',
+				'@typescript-eslint/prefer-readonly': 'error',
 			},
 		},
 		{
