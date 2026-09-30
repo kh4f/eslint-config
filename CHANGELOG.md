@@ -1,5 +1,13 @@
 # Changelog
 
+## &ensp; ` 🏷️ v0.7.0  `
+
+### &emsp; ✨ Features
+- **Line length limit**: code is now limited to a maximum of 120 characters per line via `@stylistic/max-len`. [🡥](https://github.com/kh4f/eslint-config/commit/c4a3e660c00be610d24c0224ee0d79b576efcf9b)
+- **`readonly` class members**: class properties that are never reassigned after initialization must now be marked `readonly` via `@typescript-eslint/prefer-readonly`. [🡥](https://github.com/kh4f/eslint-config/commit/e2bab402c876f9200457f83f8c595925722f961d)
+
+##### &emsp;&emsp; [Commit log](https://github.com/kh4f/eslint-config/compare/v0.6.0...v0.7.0) &ensp;•&ensp; Sep 30, 2026
+
 ## &ensp; ` 🏷️ v0.6.0  `
 
 ### &emsp; ✨ Features
