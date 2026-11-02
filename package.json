@@ -15,7 +15,7 @@
 	"scripts": {
 		"inspect": "config-inspector",
 		"build": "tsdown",
-		"lint": "tsc && eslint"
+		"lint": "bun check && eslint"
 	},
 	"dependencies": {
 		"@eslint/js": "^10.0.1",
