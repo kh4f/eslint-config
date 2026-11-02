@@ -1,11 +1,11 @@
-name: release
+name: cd
 
 on:
   push:
     tags: v*.*.*
 
 jobs:
-  release:
+  cd:
     runs-on: ubuntu-latest
     permissions:
       contents: write
