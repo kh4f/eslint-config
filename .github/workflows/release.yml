@@ -25,6 +25,8 @@ jobs:
       - run: bun run build
 
       - run: npm stage publish
-      - run: gh release create $TAG --title $TAG --draft
+      - run: |
+          awk '/^## /{found++; next} found==1' CHANGELOG.md |
+            gh release create $TAG --title $TAG --draft --notes-file -
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
