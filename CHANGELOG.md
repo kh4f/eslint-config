@@ -1,5 +1,12 @@
 # Changelog
 
+## &ensp; ` 🏷️ v0.8.0  `
+
+### &emsp; ✨ Features
+- **Async handlers in JSX attributes**: `@typescript-eslint/no-misused-promises` no longer flags promise-returning functions passed to JSX attributes like `onClick`. Misused promises in conditions and void-return arguments are still reported. [🡥](https://github.com/kh4f/eslint-config/commit/1e39dcf76416193a3f35e31a88c41868fb05eaf7)
+
+##### &emsp;&emsp; [Commit log](https://github.com/kh4f/eslint-config/compare/v0.7.0...v0.8.0) &ensp;•&ensp; Nov 2, 2026
+
 ## &ensp; ` 🏷️ v0.7.0  `
 
 ### &emsp; ✨ Features
