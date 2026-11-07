@@ -1,5 +1,12 @@
 # Changelog
 
+## &ensp; ` 🏷️ v0.9.0  `
+
+### &emsp; ✨ Features
+- **Trailing newline required**: files must now end with a newline. The previous `@stylistic/eol-last` override was removed, restoring the recommended `always` behavior. [🡥](https://github.com/kh4f/eslint-config/commit/4cb639fc1709c271aa335d054bf0fc71917742b1)
+
+##### &emsp;&emsp; [Commit log](https://github.com/kh4f/eslint-config/compare/v0.8.0...v0.9.0) &ensp;•&ensp; Nov 7, 2026
+
 ## &ensp; ` 🏷️ v0.8.0  `
 
 ### &emsp; ✨ Features
