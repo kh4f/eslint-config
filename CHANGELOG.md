@@ -1,5 +1,12 @@
 # Changelog
 
+## &ensp; ` 🏷️ v0.9.1  `
+
+### &emsp; 🩹 Fixes
+- **Rust `target` directories ignored**: Rust build folders — most notably in Tauri and wasm-bindgen projects — often contain generated JS glue files that ESLint tried to lint, flooding the output with false positives. [🡥](https://github.com/kh4f/eslint-config/commit/f043cdd)
+
+##### &emsp;&emsp; [Commit log](https://github.com/kh4f/eslint-config/compare/v0.9.0...v0.9.1) &ensp;•&ensp; Nov 8, 2026
+
 ## &ensp; ` 🏷️ v0.9.0  `
 
 ### &emsp; ✨ Features
