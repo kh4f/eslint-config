@@ -42,6 +42,7 @@ export default async function (opts: Options = {}) {
 				'@stylistic/max-len': ['error', { code: 120 }],
 				'@stylistic/brace-style': ['error', '1tbs'],
 				'@stylistic/arrow-parens': ['error', 'as-needed'],
+				'@stylistic/eol-last': ['error', 'never'],
 				'@stylistic/operator-linebreak': 'off',
 				'perfectionist/sort-imports': ['error', {
 					type: 'alphabetical',
